@@ -1,0 +1,39 @@
+{
+  "name": "date-from-clocktime",
+  "version": "0.0.0",
+  "description": "Get a valid Date object from a clocktime string. '11:30' → [Date object]",
+  "license": "MIT",
+  "repository": "radiovisual/date-from-clocktime",
+  "author": {
+    "name": "Michael Wuergler",
+    "email": "wuergler@gmail.com",
+    "url": "numetriclabs.com"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "str",
+    "string",
+    "clocktime",
+    "clock",
+    "time",
+    "from",
+    "object",
+    "date",
+    "get"
+  ],
+  "dependencies": {
+    "twelve-to-twentyfour": "^1.0.2"
+  },
+  "devDependencies": {
+    "ava": "^0.18.2",
+    "xo": "^0.17.0"
+  }
+}
