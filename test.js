@@ -19,6 +19,6 @@ test('seconds support', t => {
 });
 
 test('from option', t => {
-	const date = new Date('Tue Feb 21 2017 14:14:14 GMT+0000 (WET)');
-	t.is(fn('11:30', {from: date}).toString(), 'Tue Feb 21 2017 11:30:00 GMT+0000 (WET)');
+	const date = new Date('Tue Feb 21 2017 14:14:14');
+	t.is(fn('11:30', {from: date}).toGMTString(), 'Tue, 21 Feb 2017 11:30:00 GMT');
 });
