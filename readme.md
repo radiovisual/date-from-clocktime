@@ -38,6 +38,7 @@ The values you can use are either 12-hour or 24-hour clocktime strings:
 12-hour time formats (where `XX` means `AM` or `PM`):
 
 ```
+0:00
 00:00 XX
 00:00XX
 0:00XX
