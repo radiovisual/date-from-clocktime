@@ -1,6 +1,16 @@
 import test from 'ava';
 import fn from './';
 
+test('throws with incorrect types', t => {
+	t.throws(() => {
+		fn();
+	}, 'date-from-clocktime expected a string, got undefined');
+
+	t.throws(() => {
+		fn('03:45', {from: []});
+	}, 'opts.from expected a Date object, got object');
+});
+
 test('gets a date object with correct time', t => {
 	t.true(fn('9:30').toString().search('09:30:00') > -1);
 	t.true(fn('9:30AM').toString().search('09:30:00') > -1);

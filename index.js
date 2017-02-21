@@ -1,13 +1,19 @@
 'use strict';
 
 var to24 = require('twelve-to-twentyfour');
+var isdate = require('lodash.isdate');
 
 module.exports = (input, opts) => {
 	if (typeof input !== 'string') {
-		throw new TypeError(`Expected a string, got ${typeof input}`);
+		throw new TypeError(`date-from-clocktime expected a string, got ${typeof input}`);
 	}
 
 	opts = opts || {};
+
+	if (opts.from && !isdate(opts.from)) {
+		throw new TypeError(`opts.from expected a Date object, got ${typeof opts.from}`);
+	}
+
 	opts.from = opts.from || new Date();
 
 	var time = to24(input);

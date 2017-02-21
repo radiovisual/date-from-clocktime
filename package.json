@@ -1,7 +1,7 @@
 {
   "name": "date-from-clocktime",
   "version": "0.0.1",
-  "description": "Get a valid Date object from a clocktime string. '11:30' → [Date object]",
+  "description": "Get a valid Date object from a clocktime string. '11:30' → [object Date]",
   "license": "MIT",
   "repository": "radiovisual/date-from-clocktime",
   "author": {
@@ -39,6 +39,7 @@
     "get"
   ],
   "dependencies": {
+    "lodash.isdate": "^4.0.1",
     "twelve-to-twentyfour": "^1.0.2"
   },
   "devDependencies": {

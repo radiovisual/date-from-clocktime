@@ -1,6 +1,6 @@
 # date-from-clocktime [![Build Status](https://travis-ci.org/radiovisual/date-from-clocktime.svg?branch=master)](https://travis-ci.org/radiovisual/date-from-clocktime)
 
-> Get a valid Date object from a clocktime string. '11:30' → [Date object]
+> Get a valid Date object from a clocktime string. '11:30' → [object Date]
 
 
 ## Install
@@ -66,7 +66,7 @@ portion of the returned Date object. Defaults to Today's date.
 const dateFromClocktime = require('date-from-clocktime');
 
 const someDate = new Date('10/10/10');
-const date = dateFromClocktime('11:30', {from: someDate });
+const date = dateFromClocktime('11:30', {from: someDate});
 date.toString();
 //=> 'Sun Oct 10 2010 11:30:00 GMT+0100 (WEST)'
 ```
