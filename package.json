@@ -1,7 +1,7 @@
 {
   "name": "date-from-clocktime",
-  "version": "0.0.3",
-  "description": "Get a valid Date object from a clocktime string. '11:30' → [object Date]",
+  "version": "0.0.4",
+  "description": "Get a valid Date object from any clocktime string. '09:30 AM' → [Date object]",
   "license": "MIT",
   "repository": "radiovisual/date-from-clocktime",
   "author": {
