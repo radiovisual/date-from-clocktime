@@ -5,8 +5,8 @@
 *When all you have is the time, but what you really want is a Date!*
 
 This module will accept any clocktime string in either 12-hour or 24-hour formats,
-and return a valid Date object that includes that time. The `Date` object will
-default to today's date, but you can supply any date Object if you want to
+and return a valid Date object which includes the supplied time. The returned `Date`
+object will default to today's date, but you can supply any date Object if you want to
 control the date portion of the returned date object (year, month, day, etc).
 
 ## Install
